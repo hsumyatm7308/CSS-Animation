@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Transitionn Timming</title>
+</head>
+<style>
+    .container {
+        width: 1000px;
+
+        background-color: brown;
+    }
+
+
+    .move {
+        width: 150px;
+        height: 50px;
+        background-color: red;
+
+        text-align: center;
+        line-height: 50px;
+
+        margin: 20px 0;
+
+        transition-property: transform;
+        transition-duration: 3s;
+
+    }
+
+    .container .move:hover {
+        transform: translate(850px);
+    }
+
+    #ease {
+        transition-timing-function: ease;
+    }
+
+    #easein {
+        transition-timing-function: ease-in;
+    }
+
+    #easeout {
+        transition-timing-function: ease-out;
+    }
+
+    #easeinout {
+        transition-timing-function: ease-in-out;
+    }
+
+    #linear {
+        transition-timing-function: linear;
+    }
+
+
+    /* parameter 0 1 2 3  */
+    #cubicbezier {
+        transition-timing-function: cubic-bezier(.72, .64, .23, .71);
+
+    }
+</style>
+
+<body>
+
+    <div class="container">
+        <div id="ease" class="move">Ease</div>
+    </div>
+
+    <div class="container">
+        <div id="easein" class="move">Ease-in</div>
+    </div>
+
+
+    <div class="container">
+        <div id="easeout" class="move">Ease-out</div>
+    </div>
+
+    <div class="container">
+        <div id="easeinout" class="move">Ease-in-out</div>
+    </div>
+
+    <div class="container">
+        <div id="linear" class="move">linear</div>
+    </div>
+
+    <div class="container">
+        <div id="cubicbezier" class="move">Cubic-Bezier</div>
+    </div>
+
+
+</body>
+
+</html>
+
+
+<!-- transition nae twal thone ya tal
+
+ease: slow.... faster.... slow
+ease-in: slow....fast
+ease-out: fast.....slow
+ease-in-out: slow...fast....slow
+lineat: same rate
+cubic-bezier:   
+ -->
+
+
+<!-- မျဉ်းဖြောင့်မှာ စမှတ်က p1 ဆုံးမှတ် P3 -->

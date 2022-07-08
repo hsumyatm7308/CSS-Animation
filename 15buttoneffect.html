@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Button Effect</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        a {
+            background-color: steelblue;
+            font-size: 25px;
+            color: #ffff;
+            text-decoration: none;
+            padding: 20px 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 2px #33333333;
+        }
+
+        /* :horizontal :vertical blur color  */
+        a:active {
+            background-color: #66666666;
+            transform: translateY(4px);
+            box-shadow: 0 6px 0 grey;
+        }
+    </style>
+</head>
+
+<body>
+
+    <a href="#">Click Me</a>
+</body>
+
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Transform With Translate</title>
+    <style type="text/css">
+        .container {
+            width: 1000px;
+            background-color: gray;
+
+        }
+
+        .container .square {
+            width: 150px;
+            height: 60px;
+            background-color: red;
+            color: white;
+            font: 20px;
+            padding: 10px 0;
+            margin: 20px 0;
+
+            text-align: center;
+            line-height: 60px;
+        }
+
+        #translate:hover {
+            /* translate(x) ရေပြင်ညီပေါ်မှဦ အလုပ်လုပ်မှာ */
+            transform: translate(100%);
+        }
+
+        #translatex:hover {
+            /* translate(x) */
+            transform: translateX(100px);
+        }
+
+        #translatey:hover {
+            transform: translateY(70px);
+        }
+
+        #translatexy:hover {
+            /* transform: translate(10px); */
+            /* transform: translate(0px, -30px); */
+
+            transform: translate(100px, 100px);
+            transform: translate(-10px, 100px);
+        }
+
+
+        img {
+            width: 300px;
+            display: block;
+
+            margin: auto;
+
+            transition: transform 2;
+        }
+
+        img:hover {
+            /* transform: translate(300px); */
+
+            /* transform: translateX(100%); */
+            /* transform: translateY(-100%); */
+            /* transform: translate(50%, 100%); */
+
+            transform: translateX(-100%) translateY(-100%);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div id="translate" class="square">Translate Me</div>
+
+    </div>
+
+    <div class="container">
+        <div id="translatex" class="square">Translate X</div>
+
+    </div>
+
+    <div class="container">
+        <div id="translatey" class="square">Translate Y</div>
+
+    </div>
+
+    <div class="container">
+        <div id="translatexy" class="square">Translate XY</div>
+
+    </div>
+
+    <hr>
+
+    <div>
+        <img src="./img/dog.jpg" alt="dog">
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Clip Path</title>
+</head>
+<style type="text/css">
+    /* property + value = Declaration  */
+    .square {
+        width: 100px;
+        height: 100px;
+        background-color: steelblue;
+    }
+
+    .circle {
+        width: 100px;
+        height: 100px;
+        background-color: steelblue;
+        border-radius: 50%;
+    }
+
+    .triangle {
+        width: 0;
+        height: 0;
+        background-color: white;
+
+        border-left: 100px solid transparent;
+        border-right: 100px solid transparent;
+        border-bottom: 100px solid steelblue;
+    }
+
+    .squareshape {
+        width: 100px;
+        height: 100px;
+        background-color: steelblue;
+
+        float: left;
+
+        margin-right: 20px;
+    }
+
+    .circleshape {
+        width: 100px;
+        height: 100px;
+        background-color: steelblue;
+
+        clip-path: circle(50%);
+
+        shape-outside: circle(50%);
+
+        float: left;
+
+        margin-right: 20px;
+    }
+
+
+
+    .elipshape {
+        width: 100px;
+        height: 100px;
+        background-color: steelblue;
+
+        /* elip = width:  and height */
+        clip-path: ellipse(50% 70%);
+
+        shape-outside: ellipse(50% 70%);
+
+        float: left;
+
+        margin-right: 20px;
+    }
+
+    .polygonshape {
+        width: 100px;
+        height: 100px;
+        background-color: steelblue;
+
+        /* clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%); */
+        /* clip-path: polygon(1% 1%, 99% 1%, 99% 21%, 65% 22%, 64% 100%, 40% 100%, 39% 22%, 0% 21%); */
+        clip-path: polygon(1% 0%, 15% 1%, 49% 88%, 85% 0, 100% 0, 60% 99%, 36% 100%);
+
+        shape-outside: polygon(1% 0%, 15% 1%, 49% 88%, 85% 0, 100% 0, 60% 99%, 36% 100%);
+
+        float: left;
+        margin-right: 20px;
+    }
+</style>
+
+<body>
+
+    <div class="square">Square</div>
+
+    <hr>
+
+    <div class="circle">Circle</div>
+
+    <hr>
+
+    <div class="triangle">Triangle</div>
+
+    <hr>
+
+
+
+    <div>
+        <div class="squareshape"></div>
+
+        <p> In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual
+            form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a
+            placeholder before final copy is available.
+            In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual
+            form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a
+            placeholder before final copy is available.
+            In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual
+            form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a
+            placeholder before final copy is available.
+            In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual
+            form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a
+            placeholder before final copy is available.
+            In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual
+            form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a
+            ying on meaningful content. Lorem ipsum may be used as a
+            placeholder before final copy is available.
+            In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual
+            form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a
+            placeholder before final copy is available.
+            In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual
+            form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a
+            placeholder before final copy is available.
+            In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual
+            form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a
+            placeholder before final copy is available.
+            In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual
+            form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a
+            placeholder before final copy is available.
+        </p>
+
+    </div>
+
+
+    <br>
+
+    <div>
+        <div class="circleshape"></div>
+        <p> In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual
+            form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a
+            placeholder before final copy is available.
+            In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual
+            form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a
+            placeholder before final copy is available.
+            In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual
+            form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a
+            ceholder text commonly used to demonstrate the visual
+            form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a
+            placeholder before final copy is available.
+            In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual
+            t commonly used to demonstrate the visual
+            form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a
+            placeholder before final copy is available.
+            In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual
+            form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a
+            placeholder before final copy is available.
+            In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual
+            form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a
+            placeholder before final copy is available.
+        </p>
+
+    </div>
+
+
+    <hr>
+
+    <div>
+        <div class="elipshape"></div>
+        <p> In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual
+            form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a
+            placeholder before final copy is available.
+            In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual
+            eholder text commonly used to demonstrate the visual
+            form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a
+            placeholder before final copy is available.
+            In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual
+            form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a
+            placeholder before final copy is available.
+            In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual
+            form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a
+            placeholder before final copy is available.
+            In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visua
+            ying on meaningful content. Lorem ipsum may be used as a
+            placeholder before final copy is available.
+        </p>
+
+    </div>
+
+
+    <hr>
+
+    <div>
+        <div class="polygonshape"></div>
+        <p> In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual
+            form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a
+            placeholder before final copy is available.
+            In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual
+            eholder text commonly used to demonstrate the visual
+            form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a
+            placeholder before final copy is available.
+            In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual
+            form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a
+            placeholder before final copy is available.
+            In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual
+            form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a
+            placeholder before final copy is available.
+            In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visua
+            ying on meaningful content. Lorem ipsum may be used as a
+            placeholder before final copy is available.
+        </p>
+
+    </div>
+
+
+
+
+</body>
+
+</html>

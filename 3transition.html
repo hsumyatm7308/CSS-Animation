@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Transition</title>
+</head>
+<style>
+    .div1 {
+        width: 200px;
+        height: 90px;
+        background-color: steelblue;
+
+        color: white;
+        text-align: center;
+
+        transition-property: background;
+        transition-duration: 2s;
+    }
+
+    .div1:hover {
+        background: green;
+    }
+
+    .div2 {
+        width: 200px;
+        height: 90px;
+        background-color: steelblue;
+
+        color: white;
+        text-align: center;
+
+        /* transition-property: width; */
+        /* transition-property: width,color, background; */
+        /* transition-property: all; */
+        /* transition-duration: 3s; */
+
+        /* short-hand */
+        /* transition: width 3s; */
+        transition: width 1s, background 3s, color 4s;
+    }
+
+    .div2:hover {
+        width: 500px;
+        color: black;
+        background: chartreuse;
+    }
+</style>
+
+<body>
+    <div class="div1">Css Transition Div1</div>
+    <hr>
+    <div class="div2">Css Transition Div2</div>
+</body>
+
+</html>

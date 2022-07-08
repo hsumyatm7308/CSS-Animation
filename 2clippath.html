@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+
+    <style>
+        .shape {
+            width: 500px;
+            height: 300px;
+
+            background-color: red;
+
+            /* clip-path: circle(100px); */
+            /* clip-path: shape-radious at position; */
+
+            /* clip-path: circle(200px at right); */
+            /* clip-path: circle(200px at left); */
+            /* clip-path: circle(200px at bottom); */
+            /* clip-path: circle(200px at top); */
+            /* clip-path: circle(200px at center); */
+
+            /* clip-path: circle(200px at 0); */
+            /* clip-path: circle(50px at 200px); */
+
+
+            /* circle(shape radius at width height) */
+            /* clip-path: circle(50px at 200px 20px); */
+
+            clip-path: circle(10% at 40% 70%);
+        }
+
+        .shape2 {
+            width: 500px;
+            height: 300px;
+
+            clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+        }
+
+        #shape1 {
+            width: 300px;
+            height: 200px;
+
+            /* clip-path: ellipse(100% 40%); */
+
+            /* shaperadius at possition */
+            /* clip-path: ellipse(100px 30px at right); */
+
+            clip-path: ellipse(50% 10% at 60%);
+        }
+    </style>
+</head>
+
+<body>
+    <img src="./img/dog.jpg" alt="" class="shape">
+
+    <hr>
+
+
+    <img src="./img/dog.jpg" alt="polygon" class="shape2">
+
+    <hr>
+    <img src="./img/dog.jpg" alt="ellipse" id="shape1">
+</body>
+
+</html>
