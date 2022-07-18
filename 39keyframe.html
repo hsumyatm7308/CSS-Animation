@@ -9,18 +9,44 @@
                 margin: 0;
             }
 
-            div{
+            .box1{
                 width: 150px;
                 height: 150px;
                 background-color: steelblue;
 
-                animation-name: myani;
+                /* animation-name: myani; */
                 animation-duration: 3s;
 
                 /* animation-fill-mode: forwards; */
                 animation-fill-mode: backwards;
                 animation-delay: 3s;
 
+            }
+
+
+            .box2{
+                width: 150px;
+                height: 150px;
+                background-color: orange;
+
+                animation-name: myrules;
+                animation-duration: 3s;
+
+                animation-fill-mode: forwards;
+            }
+
+
+            .box3{
+                width: 150px;
+                height: 150px;
+                background-color: orange;
+
+                position: relative;
+
+                animation-name: myshakes;
+                animation-duration: 3s;
+
+                animation-fill-mode: forwards;
             }
 
             @keyframes myani{
@@ -36,11 +62,69 @@
                     transform: translateX(800px),translateY(800px);
                 }
             }
+
+
+            @keyframes myrules{
+                0% {
+                     background-color: violet;
+                     transform: translate(0);
+                }
+
+                25%{
+                    background-color: orange;
+                    transform: translate(300px);
+                }
+
+                50%{
+                    background-color: blue;
+                    transform: translate(300px,300px);
+                }
+
+                75%{
+                    background-color: orange;
+                    transform: translate(0,300px);
+                }
+
+                100%{
+                    background-color: black;
+                    transform: translate(0);
+                }
+            }
+
+
+            @keyframes myshakes{
+               12.5%{
+                top: -100px;
+               }
+
+               25%{
+                top: 100px;
+               }
+
+               37.5%{
+                top: -50px;
+               }
+
+               50%{
+                top: 50px;
+               }
+               
+               62.5%{
+                top: -25;
+               }
+
+               75%{
+                top: 25px;
+               }
+
+            }
         </style>
     </head>
     <body>
         
-        <div></div>
+        <div class="box1">box1</div>
+        <div class="box2">box2</div>
+        <div class="box3">box3</div>
 
     </body>
 </html>
